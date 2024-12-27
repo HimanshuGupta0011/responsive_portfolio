@@ -6,24 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Himanshu Gupta | Full Stack Web Developer</title>
   <meta name="description" content="Portfolio of Himanshu Gupta, Full Stack Web Developer" />
-  <link rel="stylesheet" crossorigin href="./assets/index-b2uDtSzF.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <style>
+    @keyframes appear{
+      from{
+        opacity: 0;
+        scale: 0.5;
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+      }
+    }
+
+    .appear-animation{
+      animation: appear 5s linear;
+      animation-timeline: view();
+      animation-range: entry 0 cover 30%;
+    }
+  </style>
+  <link rel="stylesheet" crossorigin href="./assets/index.css">
 </head>
 
-<body class="bg-gray-900 text-white scroll-smooth">
+<body class="bg-gray-900 text-white scroll-smooth" style="font-family: 'Ubuntu', serif;">
   <!-- Navbar -->
 
-  <nav class="flex h-[5rem] w-full items-center justify-between fixed top-0 left-0 bg-gradient-to-r from-[#4A90E2] to-[#6BB9F0] shadow-lg px-5 sm:px-10 z-10
-  ">
-    <!-- Logo  -->
-
-    <div
-      class="logo text-[1.3rem] md:text-[2rem] font-bold text-black hover:drop-shadow-[0_0_1px_black] cursor-pointer sm:tracking-wider">
-      Portfolio.
-    </div>
+  <nav
+    class="flex h-[5rem] w-full items-center justify-center fixed top-0 left-0 bg-gradient-to-r from-[#4A90E2] to-[#6BB9F0] shadow-lg z-10">
 
     <!-- Navigation Buttons-->
 
-    <ul class="flex text-[1rem] md:text-[1.5rem] font-semibold space-x-3 sm:space-x-10">
+    <ul class="flex md:text-[1.5rem] sm:font-semibold space-x-5 sm:space-x-10">
       <li>
         <a href="#home" class="hover:drop-shadow-[0_0_2px_cyan]">Home</a>
       </li>
@@ -33,9 +48,9 @@
       <li>
         <a href="#projects" class="hover:drop-shadow-[0_0_2px_cyan]">Projects</a>
       </li>
-      <li>
+      <!-- <li>
         <a href="#contact" class="hover:drop-shadow-[0_0_2px_cyan]">Contact</a>
-      </li>
+      </li> -->
     </ul>
   </nav>
 
@@ -55,12 +70,13 @@
         I create responsive and scalable web applications that deliver exceptional user experiences.
       </p>
       <div class="icons flex w-[70%] sm:w-[40%] text-[2rem] mt-[1.25rem]">
-        <a href="" target="_blank" class="insta cursor-pointer hover:drop-shadow-[0_0_2px_cyan]" aria-label="Instagram"><i
-            class="fa-brands fa-instagram" style="color: #ffffff"></i></a>
-        <a href="" target="_blank" class="x-twitter mx-auto cursor-pointer hover:drop-shadow-[0_0_2px_cyan]" aria-label="X"><i
-            class="fa-brands fa-x-twitter" style="color: #ffffff"></i></a>
-        <a href="" target="_blank" class="linkedin cursor-pointer hover:drop-shadow-[0_0_2px_cyan]" aria-label="Linkedin"><i
-            class="fa-brands fa-linkedin-in" style="color: #ffffff"></i></a>
+        <a href="" target="_blank"
+          class="insta cursor-pointer hover:drop-shadow-[0_0_2px_cyan] focus:drop-shadow-[0_0_2px_cyan]"
+          aria-label="Instagram"><i class="fa-brands fa-instagram" style="color: #ffffff"></i></a>
+        <a href="" target="_blank" class="x-twitter mx-auto cursor-pointer hover:drop-shadow-[0_0_2px_cyan]"
+          aria-label="X"><i class="fa-brands fa-x-twitter" style="color: #ffffff"></i></a>
+        <a href="" target="_blank" class="linkedin cursor-pointer hover:drop-shadow-[0_0_2px_cyan]"
+          aria-label="Linkedin"><i class="fa-brands fa-linkedin-in" style="color: #ffffff"></i></a>
       </div>
     </div>
 
@@ -95,33 +111,36 @@
   <!--Skills Section-->
 
   <!-- Skills Section -->
-  <section id="skills" class="px-8 py-16 bg-gray-800 text-center">
+  <section id="skills" class="px-8 py-20 bg-gray-800 text-center">
     <h2 class="text-3xl font-semibold text-white mb-10">My Skills</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      <div class="bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl shadow-lg">
+      <div class="appear-animation bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl drop-shadow-[0_4px_4px_black]">
         <h3 class="text-xl font-semibold text-white mb-4">HTML, CSS, JS</h3>
         <p class="text-gray-200">Building modern, responsive designs with semantic HTML, CSS, and ES6+ JavaScript.</p>
       </div>
-      <div class="bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl shadow-lg">
+      <div class="appear-animation bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl drop-shadow-[0_4px_4px_black]">
         <h3 class="text-xl font-semibold text-white mb-4">ReactJS</h3>
         <p class="text-gray-200">Expert in building dynamic interfaces with hooks, state management, and optimization
           techniques.</p>
       </div>
-      <div class="bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl shadow-lg">
+      <div class="appear-animation bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl drop-shadow-[0_4px_4px_black]">
         <h3 class="text-xl font-semibold text-white mb-4">TailwindCSS</h3>
         <p class="text-gray-200">Designing sleek, responsive interfaces quickly with TailwindCSS utilities.</p>
       </div>
-      <div class="bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl shadow-lg">
+      <div class="appear-animation bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl drop-shadow-[0_4px_4px_black]">
         <h3 class="text-xl font-semibold text-white mb-4">NodeJS</h3>
-        <p class="text-gray-200">Proficient in building scalable backend systems with Node.js, utilizing Express, RESTful APIs, and database integration.</p>
+        <p class="text-gray-200">Proficient in building scalable backend systems with Node.js, utilizing Express,
+          RESTful APIs, and database integration.</p>
       </div>
-      <div class="bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl shadow-lg">
+      <div class="appear-animation bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl drop-shadow-[0_4px_4px_black]">
         <h3 class="text-xl font-semibold text-white mb-4">MongoDB</h3>
-        <p class="text-gray-200">Skilled in working with MongoDB for building NoSQL databases, creating efficient queries, and managing data with Mongoose.</p>
+        <p class="text-gray-200">Skilled in working with MongoDB for building NoSQL databases, creating efficient
+          queries, and managing data with Mongoose.</p>
       </div>
-      <div class="bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl shadow-lg">
+      <div class="appear-animation bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl drop-shadow-[0_4px_4px_black]">
         <h3 class="text-xl font-semibold text-white mb-4">Next.js</h3>
-        <p class="text-gray-200">Experienced in building full-stack apps with Next.js, using SSR, SSG, and API routes for performance and SEO</p>
+        <p class="text-gray-200">Experienced in building full-stack apps with Next.js, using SSR, SSG, and API routes
+          for performance and SEO</p>
       </div>
     </div>
   </section>
@@ -131,23 +150,26 @@
     <div class="container mx-auto">
       <h2 class="text-3xl font-semibold text-center mb-10">My Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div class="appear-animation bg-gray-800 p-6 rounded-lg drop-shadow-[0_4px_4px_black]">
           <h3 class="text-2xl font-semibold mb-4">Todos App</h3>
           <p class="text-gray-300">Simple React-based project that allows users to add, view, and manage tasks.</p>
-          <a href="https://github.com/HimanshuGupta278/todos-app" target="_blank" class="block mt-4 text-cyan-400 hover:text-teal-300">View on GitHub</a>
+          <a href="https://github.com/HimanshuGupta278/todos-app" target="_blank"
+            class="block mt-4 text-cyan-400 hover:text-teal-300">View on GitHub</a>
         </div>
 
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div class="appear-animation bg-gray-800 p-6 rounded-lg drop-shadow-[0_4px_4px_black]">
           <h3 class="text-2xl font-semibold mb-4">iNoteBook</h3>
           <p class="text-gray-300">A full-stack note-taking app with JWT authentication built with the MERN stack.</p>
-          <a href="https://github.com/HimanshuGupta278/iNoteBook" target="_blank" class="block mt-4 text-cyan-400 hover:text-teal-300">View on GitHub</a>
+          <a href="https://github.com/HimanshuGupta278/iNoteBook" target="_blank"
+            class="block mt-4 text-cyan-400 hover:text-teal-300">View on GitHub</a>
         </div>
 
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div class="appear-animation bg-gray-800 p-6 rounded-lg drop-shadow-[0_4px_4px_black]">
           <h3 class="text-2xl font-semibold mb-4">Real-Time Chat App</h3>
           <p class="text-gray-300">Developed with Socket.IO, React, and TailwindCSS for real-time messaging and room
             management.</p>
-          <a href="https://github.com/HimanshuGupta278/realtime-chat-app" target="_blank" class="block mt-4 text-cyan-400 hover:text-teal-300">View on GitHub</a>
+          <a href="https://github.com/HimanshuGupta278/realtime-chat-app" target="_blank"
+            class="block mt-4 text-cyan-400 hover:text-teal-300">View on GitHub</a>
         </div>
         <!-- <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
           <h3 class="text-2xl font-semibold mb-4">Social Media App</h3>
@@ -156,24 +178,28 @@
           <a href="" target="_blank" class="block mt-4 text-cyan-400 hover:text-teal-300">Live Demo</a>
         </div>
       </div> -->
-    </div>
+      </div>
   </section>
 
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 px-8 bg-gray-800 text-center">
+  <!--TODO-->
+  <!-- <section id="contact" class="py-16 px-8 bg-gray-800 text-center">
     <h2 class="text-3xl font-semibold text-white mb-10">Get in Touch</h2>
     <form class="max-w-2xl mx-auto">
-      <input type="text" placeholder="Enter Your Name" class="w-full p-4 mb-4 rounded-lg text-black text-[1.2rem] font-semibold" required />
-      <input type="email" placeholder="Enter Your Email" class="w-full p-4 mb-4 rounded-lg text-black text-[1.2rem] font-semibold" required />
-      <textarea placeholder="Enter Your Message" class="w-full p-4 mb-4 rounded-lg text-black text-[1.2rem] font-semibold" required ></textarea>
+      <input type="text" placeholder="Enter Your Name"
+        class="w-full p-4 mb-4 rounded-lg text-black text-[1.2rem] font-semibold" required />
+      <input type="email" placeholder="Enter Your Email"
+        class="w-full p-4 mb-4 rounded-lg text-black text-[1.2rem] font-semibold" required />
+      <textarea placeholder="Enter Your Message"
+        class="w-full p-4 mb-4 rounded-lg text-black text-[1.2rem] font-semibold" required></textarea>
       <button type="submit" class="w-full bg-[#0288d1] text-white p-4 rounded-lg">Send Message</button>
     </form>
-  </section>
+  </section> -->
 
   <!-- Footer -->
   <footer class="bg-[#0288d1] text-white text-center py-6">
-    <p class="text-lg">&copy; 2024 Himanshu Gupta. All rights reserved.</p>
+    <p class="sm:text-lg">&copy; 2024 Himanshu Gupta. All rights reserved.</p>
   </footer>
 
   <script src="https://kit.fontawesome.com/a19ce1c431.js" crossorigin="anonymous"></script>
