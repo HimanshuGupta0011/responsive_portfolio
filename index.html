@@ -6,9 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Himanshu Gupta | Full Stack Web Developer</title>
   <meta name="description" content="Portfolio of Himanshu Gupta, Full Stack Web Developer" />
+  
+  <!-- OpenGraph Tags -->
+  <meta property="og:title" content="Himanshu Gupta | Full Stack Web Developer" />
+  <meta property="og:description" content="Portfolio of Himanshu Gupta, Full Stack Web Developer" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="https://kit.fontawesome.com/a19ce1c431.js" as="script">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <!-- Existing Stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  
   <style>
     @keyframes appear{
       from{
@@ -25,85 +39,52 @@
       animation: appear 5s linear;
       animation-timeline: view();
       animation-range: entry 0 cover 30%;
+      will-change: transform, opacity;
+    }
+
+    @media (prefers-color-scheme: light) {
+      body {
+        background-color: #ffffff;
+        color: #1a1a1a;
+      }
     }
   </style>
-  <link rel="stylesheet" crossorigin href="./assets/index.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-C0a2ddvD.css">
 </head>
 
 <body class="bg-gray-900 text-white scroll-smooth" style="font-family: 'Ubuntu', serif;">
   <!-- Navbar -->
-
-  <nav
-    class="flex h-[5rem] w-full items-center justify-center fixed top-0 left-0 bg-gradient-to-r from-[#4A90E2] to-[#6BB9F0] shadow-lg z-10">
-
-    <!-- Navigation Buttons-->
-
-    <ul class="flex md:text-[1.5rem] sm:font-semibold space-x-5 sm:space-x-10">
-      <li>
-        <a href="#home" class="hover:drop-shadow-[0_0_2px_cyan]">Home</a>
-      </li>
-      <li>
-        <a href="#skills" class="hover:drop-shadow-[0_0_2px_cyan]">Skills</a>
-      </li>
-      <li>
-        <a href="#projects" class="hover:drop-shadow-[0_0_2px_cyan]">Projects</a>
-      </li>
-      <!-- <li>
-        <a href="#contact" class="hover:drop-shadow-[0_0_2px_cyan]">Contact</a>
-      </li> -->
+  <nav aria-label="Main navigation"
+    class="flex h-16 w-full items-center justify-center fixed top-0 left-0 bg-white/10 backdrop-blur-lg shadow-lg z-10">
+    <ul class="flex text-base sm:text-lg font-medium space-x-8 sm:space-x-12">
+      <li><a href="#home" class="text-white hover:text-yellow-300 transition-colors duration-300">Home</a></li>
+      <li><a href="#skills" class="text-white hover:text-yellow-300 transition-colors duration-300">Skills</a></li>
+      <li><a href="#projects" class="text-white hover:text-yellow-300 transition-colors duration-300">Projects</a></li>
     </ul>
   </nav>
 
   <!-- Home Section -->
-
-  <section id="home" class="h-[100vh] w-full flex items-center justify-center px-[4rem] -z-10 lg:justify-start lg:px-0">
-    <!-- Home Section Text Content-->
-
-    <div class="home-content flex flex-col items-center justify-center lg:w-[40%] lg:items-start lg:pl-[7rem]">
-      <h1 class="text-[1.4rem] sm:text-[2.5rem] font-semibold">
-        I'm <span class="text-cyan-400">Himanshu Gupta</span>
+  <section id="home" class="min-h-screen w-full flex items-center justify-center px-4 bg-gradient-to-b from-gray-900 to-black">
+    <div class="flex flex-col items-center lg:items-start max-w-4xl text-center lg:text-left">
+      <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
+        Hi, I'm <span class="text-white">Himanshu Gupta</span>
       </h1>
-      <h2 class="text-[1.15rem] sm:text-[1.75rem] my-[1.25rem] font-semibold drop-shadow-[0_0_2px_cyan]">
+      <h2 class="text-2xl sm:text-4xl font-light text-gray-300 mb-8">
         Full Stack Web Developer
       </h2>
-      <p class="text-justify text-[1.1rem]">
+      <p class="text-gray-400 max-w-2xl mb-12 leading-relaxed">
         I create responsive and scalable web applications that deliver exceptional user experiences.
       </p>
-      <div class="icons flex w-[70%] sm:w-[40%] text-[2rem] mt-[1.25rem]">
-        <a href="" target="_blank"
-          class="insta cursor-pointer hover:drop-shadow-[0_0_2px_cyan] focus:drop-shadow-[0_0_2px_cyan]"
-          aria-label="Instagram"><i class="fa-brands fa-instagram" style="color: #ffffff"></i></a>
-        <a href="" target="_blank" class="x-twitter mx-auto cursor-pointer hover:drop-shadow-[0_0_2px_cyan]"
-          aria-label="X"><i class="fa-brands fa-x-twitter" style="color: #ffffff"></i></a>
-        <a href="" target="_blank" class="linkedin cursor-pointer hover:drop-shadow-[0_0_2px_cyan]"
-          aria-label="Linkedin"><i class="fa-brands fa-linkedin-in" style="color: #ffffff"></i></a>
-      </div>
-    </div>
-
-    <!-- Home page image and animated blob -->
-
-    <div class="home-img hidden lg:flex items-center justify-center w-[65%]">
-      <div class="blob w-[60%]">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#06B6D4" d="" transform="translate(100 100)">
-            <animate attributeName="d" dur="10000ms" repeatCount="indefinite" values="M55.5,-17.3C64.4,9.3,58.9,41.4,39.7,55.6C20.4,69.8,-12.5,66.2,-35.5,49.4C-58.4,32.6,-71.3,2.6,-63.8,-22.2C-56.2,-47,-28.1,-66.7,-2.4,-65.9C23.3,-65.2,46.6,-44,55.5,-17.3Z;
-              
-              M64.4,-24.3C70.9,-1,54.9,26.3,35.2,38.3C15.4,50.3,-8.1,46.9,-27.1,33.9C-46.2,20.9,-60.7,-1.8,-55.4,-23.5C-50.1,-45.2,-25.1,-65.9,2,-66.6C29,-67.2,57.9,-47.7,64.4,-24.3Z;
-
-              M52.8,-13.7C62.2,11.7,59.3,44.6,42.6,56.1C25.9,67.7,-4.5,57.9,-26.9,40.8C-49.3,23.6,-63.7,-0.9,-57.9,-21.4C-52,-42,-26,-58.5,-2.1,-57.8C21.7,-57.1,43.5,-39.2,52.8,-13.7Z;
-
-              M63,-20C72.7,9.4,65.4,44.7,43.8,60.5C22.1,76.3,-13.9,72.5,-34.9,55.5C-55.9,38.5,-61.8,8.2,-53.5,-19.2C-45.2,-46.7,-22.6,-71.4,2,-72.1C26.6,-72.7,53.3,-49.4,63,-20Z;
-
-              M42.1,-18.6C47.3,2.3,39.2,22.5,20.4,38.7C1.6,54.9,-27.9,67,-48.4,54.9C-68.8,42.8,-80.3,6.5,-70.7,-20.4C-61.1,-47.3,-30.6,-64.9,-6.1,-62.9C18.5,-60.9,36.9,-39.5,42.1,-18.6Z;
-
-              M65,-18.3C73.4,4.7,61.8,36.9,40,52.1C18.1,67.4,-14.1,65.6,-35.9,49.7C-57.6,33.8,-68.9,3.9,-61.2,-18.2C-53.5,-40.3,-26.7,-54.5,0.8,-54.7C28.3,-55,56.7,-41.3,65,-18.3Z;
-
-              M48.4,-12.4C56.7,9.6,53,38.8,37.9,49.1C22.7,59.4,-4,50.9,-27.4,34.7C-50.7,18.4,-70.7,-5.5,-65.5,-23.3C-60.4,-41,-30.2,-52.6,-5.1,-50.9C20.1,-49.3,40.2,-34.4,48.4,-12.4Z;
-
-              M55.5,-17.3C64.4,9.3,58.9,41.4,39.7,55.6C20.4,69.8,-12.5,66.2,-35.5,49.4C-58.4,32.6,-71.3,2.6,-63.8,-22.2C-56.2,-47,-28.1,-66.7,-2.4,-65.9C23.3,-65.2,46.6,-44,55.5,-17.3Z;
-              "></animate>
-          </path>
-        </svg>
+      <div class="flex space-x-6">
+        <a href="" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors duration-300" aria-label="Instagram">
+          <i class="fa-brands fa-instagram text-2xl"></i>
+        </a>
+        <a href="" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors duration-300" aria-label="X">
+          <i class="fa-brands fa-x-twitter text-2xl"></i>
+        </a>
+        <a href="" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors duration-300" aria-label="Linkedin">
+          <i class="fa-brands fa-linkedin-in text-2xl"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -111,82 +92,82 @@
   <!--Skills Section-->
 
   <!-- Skills Section -->
-  <section id="skills" class="px-8 py-20 bg-gray-800 text-center">
-    <h2 class="appear-animation text-3xl font-semibold text-white mb-10">My Skills</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      <div class="appear-animation bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl drop-shadow-[0_4px_4px_black]">
-        <h3 class="text-xl font-semibold text-white mb-4">HTML, CSS, JS</h3>
-        <p class="text-gray-200">Building modern, responsive designs with semantic HTML, CSS, and ES6+ JavaScript.</p>
-      </div>
-      <div class="appear-animation bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl drop-shadow-[0_4px_4px_black]">
-        <h3 class="text-xl font-semibold text-white mb-4">ReactJS</h3>
-        <p class="text-gray-200">Expert in building dynamic interfaces with hooks, state management, and optimization
-          techniques.</p>
-      </div>
-      <div class="appear-animation bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl drop-shadow-[0_4px_4px_black]">
-        <h3 class="text-xl font-semibold text-white mb-4">TailwindCSS</h3>
-        <p class="text-gray-200">Designing sleek, responsive interfaces quickly with TailwindCSS utilities.</p>
-      </div>
-      <div class="appear-animation bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl drop-shadow-[0_4px_4px_black]">
-        <h3 class="text-xl font-semibold text-white mb-4">NodeJS</h3>
-        <p class="text-gray-200">Proficient in building scalable backend systems with Node.js, utilizing Express,
-          RESTful APIs, and database integration.</p>
-      </div>
-      <div class="appear-animation bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl drop-shadow-[0_4px_4px_black]">
-        <h3 class="text-xl font-semibold text-white mb-4">MongoDB</h3>
-        <p class="text-gray-200">Skilled in working with MongoDB for building NoSQL databases, creating efficient
-          queries, and managing data with Mongoose.</p>
-      </div>
-      <div class="appear-animation bg-gradient-to-r from-[#2196F3] to-[#03A9F4] p-8 rounded-xl drop-shadow-[0_4px_4px_black]">
-        <h3 class="text-xl font-semibold text-white mb-4">Next.js</h3>
-        <p class="text-gray-200">Experienced in building full-stack apps with Next.js, using SSR, SSG, and API routes
-          for performance and SEO</p>
+  <section id="skills" class="py-20 px-4 bg-gray-800">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-16 border-b-4 border-teal-500 inline-block pb-2">Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-400 mb-4">HTML, CSS, JS</h3>
+          <p class="text-gray-300">Building modern, responsive designs with semantic HTML, CSS, and ES6+ JavaScript.</p>
+        </div>
+        <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-400 mb-4">ReactJS</h3>
+          <p class="text-gray-300">Expert in building dynamic interfaces with hooks, state management, and optimization
+            techniques.</p>
+        </div>
+        <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-400 mb-4">TailwindCSS</h3>
+          <p class="text-gray-300">Designing sleek, responsive interfaces quickly with TailwindCSS utilities.</p>
+        </div>
+        <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-400 mb-4">NodeJS</h3>
+          <p class="text-gray-300">Proficient in building scalable backend systems with Node.js, utilizing Express,
+            RESTful APIs, and database integration.</p>
+        </div>
+        <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-400 mb-4">MongoDB</h3>
+          <p class="text-gray-300">Skilled in working with MongoDB for building NoSQL databases, creating efficient
+            queries, and managing data with Mongoose.</p>
+        </div>
+        <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-400 mb-4">Next.js</h3>
+          <p class="text-gray-300">Experienced in building full-stack apps with Next.js, using SSR, SSG, and API routes
+            for performance and SEO</p>
+        </div>
       </div>
     </div>
   </section>
 
+ 
   <!-- Projects Section -->
-  <section id="projects" class="px-8 py-16">
-    <div class="container mx-auto">
-      <h2 class="appear-animation text-3xl font-semibold text-center mb-10">My Projects</h2>
+  <section id="projects" class="py-20 px-4 bg-gray-900">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-16 border-b-4 border-teal-500 inline-block pb-2">Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="appear-animation bg-gray-800 p-6 rounded-lg drop-shadow-[0_4px_4px_black]">
-          <h3 class="text-2xl font-semibold mb-4">Todos App</h3>
-          <p class="text-gray-300">Simple React-based project that allows users to add, view, and manage tasks.</p>
+        <div class="bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-400 mb-4">Todos App</h3>
+          <p class="text-gray-300 mb-6">Simple React-based project that allows users to add, view, and manage tasks.</p>
           <a href="https://github.com/HimanshuGupta278/todos-app" target="_blank"
-            class="block mt-4 text-cyan-400 hover:text-teal-300">View on GitHub</a>
+            class="text-teal-400 hover:text-teal-300 transition-colors duration-300 text-sm">
+            View on GitHub →
+          </a>
         </div>
-
-        <div class="appear-animation bg-gray-800 p-6 rounded-lg drop-shadow-[0_4px_4px_black]">
-          <h3 class="text-2xl font-semibold mb-4">iNoteBook</h3>
-          <p class="text-gray-300">A full-stack note-taking app with JWT authentication built with the MERN stack.</p>
+        <div class="bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-400 mb-4">iNoteBook</h3>
+          <p class="text-gray-300 mb-6">A full-stack note-taking app with JWT authentication built with the MERN stack.</p>
           <a href="https://github.com/HimanshuGupta278/iNoteBook" target="_blank"
-            class="block mt-4 text-cyan-400 hover:text-teal-300">View on GitHub</a>
+            class="text-teal-400 hover:text-teal-300 transition-colors duration-300 text-sm">
+            View on GitHub →
+          </a>
         </div>
-
-        <div class="appear-animation bg-gray-800 p-6 rounded-lg drop-shadow-[0_4px_4px_black]">
-          <h3 class="text-2xl font-semibold mb-4">Real-Time Chat App</h3>
-          <p class="text-gray-300">Developed with Socket.IO, React, and TailwindCSS for real-time messaging and room
+        <div class="bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-400 mb-4">Real-Time Chat App</h3>
+          <p class="text-gray-300 mb-6">Developed with Socket.IO, React, and TailwindCSS for real-time messaging and room
             management.</p>
           <a href="https://github.com/HimanshuGupta278/realtime-chat-app" target="_blank"
-            class="block mt-4 text-cyan-400 hover:text-teal-300">View on GitHub</a>
+            class="text-teal-400 hover:text-teal-300 transition-colors duration-300 text-sm">
+            View on GitHub →
+          </a>
         </div>
-        <!-- <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-semibold mb-4">Social Media App</h3>
-          <p class="text-gray-300">Features authentication, role-based access, and user management built with Next.js
-            and MongoDB.</p>
-          <a href="" target="_blank" class="block mt-4 text-cyan-400 hover:text-teal-300">Live Demo</a>
-        </div>
-      </div> -->
       </div>
+    </div>
   </section>
-
 
   <!-- Contact Section -->
   <!--TODO-->
   <!-- <section id="contact" class="py-16 px-8 bg-gray-800 text-center">
-    <h2 class="appear-animation text-3xl font-semibold text-white mb-10">Get in Touch</h2>
-    <form class="appear-animation max-w-2xl mx-auto">
+    <h2 class="text-3xl font-semibold text-white mb-10">Get in Touch</h2>
+    <form class="max-w-2xl mx-auto">
       <input type="text" placeholder="Enter Your Name"
         class="w-full p-4 mb-4 rounded-lg text-black text-[1.2rem] font-semibold" required />
       <input type="email" placeholder="Enter Your Email"
@@ -198,11 +179,9 @@
   </section> -->
 
   <!-- Footer -->
-  <footer class="bg-[#0288d1] text-white text-center py-6">
-    <p class="sm:text-lg">&copy; 2024 Himanshu Gupta. All rights reserved.</p>
+  <footer class="py-8 px-4 bg-gradient-to-r from-teal-600 to-blue-600">
+    <p class="text-center text-white text-sm">&copy; 2024 Himanshu Gupta. All rights reserved.</p>
   </footer>
-
-  <script src="https://kit.fontawesome.com/a19ce1c431.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
