@@ -11,118 +11,83 @@
   <meta property="og:title" content="Himanshu Gupta | Full Stack Web Developer" />
   <meta property="og:description" content="Portfolio of Himanshu Gupta, Full Stack Web Developer" />
   <meta property="og:type" content="website" />
-  
-  <!-- Preload Critical Resources -->
-  <link rel="preload" href="https://kit.fontawesome.com/a19ce1c431.js" as="script">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  
-  <!-- Existing Stylesheets -->
+
+  <!-- Stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-  
-  <style>
-    @keyframes appear{
-      from{
-        opacity: 0;
-        transform: translateX(-20%);
-      }
-      to{
-        opacity: 1;
-        transform: translateX(0%);
-      }
-    }
-
-    .appear-animation{
-      animation: appear 5s linear;
-      animation-timeline: view();
-      animation-range: entry 0 cover 30%;
-      will-change: transform, opacity;
-    }
-
-    @media (prefers-color-scheme: light) {
-      body {
-        background-color: #ffffff;
-        color: #1a1a1a;
-      }
-    }
-  </style>
-  <link rel="stylesheet" crossorigin href="/assets/index-C0a2ddvD.css">
+  <script src="https://kit.fontawesome.com/a19ce1c431.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-q9PQYrXo.css">
 </head>
 
-<body class="bg-gray-900 text-white scroll-smooth" style="font-family: 'Ubuntu', serif;">
+<body class="dark bg-gray-900 text-white dark:bg-gray-900 dark:text-white scroll-smooth" style="font-family: 'Ubuntu', serif;">
   <!-- Navbar -->
   <nav aria-label="Main navigation"
-    class="flex h-16 w-full items-center justify-center fixed top-0 left-0 bg-white/10 backdrop-blur-lg shadow-lg z-10">
+    class="flex h-16 w-full items-center justify-between fixed top-0 left-0 bg-gray-100 dark:bg-black/10 backdrop-blur-lg shadow-lg z-10 px-8">
     <ul class="flex text-base sm:text-lg font-medium space-x-8 sm:space-x-12">
-      <li><a href="#home" class="text-white hover:text-yellow-300 transition-colors duration-300">Home</a></li>
-      <li><a href="#skills" class="text-white hover:text-yellow-300 transition-colors duration-300">Skills</a></li>
-      <li><a href="#projects" class="text-white hover:text-yellow-300 transition-colors duration-300">Projects</a></li>
+      <li><a href="#home" class="text-gray-900 font-bold dark:font-bold dark:text-white hover:text-blue-600 dark:hover:text-blue-600 transition-colors duration-300 ease-in-out">Home</a></li>
+      <li><a href="#skills" class="text-gray-900 font-bold dark:font-bold dark:text-white hover:text-blue-600 dark:hover:text-blue-600 transition-colors duration-300 ease-in-out">Skills</a></li>
+      <li><a href="#projects" class="text-gray-900 font-bold dark:font-bold dark:text-white hover:text-blue-600 dark:hover:text-blue-600 transition-colors duration-300 ease-in-out">Projects</a></li>
     </ul>
+    <button id="theme-toggle" class="text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-600 transition-colors duration-300 ease-in-out">
+      <i class="fas fa-sun"></i>
+    </button>
   </nav>
 
   <!-- Home Section -->
-  <section id="home" class="min-h-screen w-full flex items-center justify-center px-4 bg-gradient-to-b from-gray-900 to-black">
+  <section id="home" class="min-h-screen w-full flex items-center justify-center px-4 bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-black">
     <div class="flex flex-col items-center lg:items-start max-w-4xl text-center lg:text-left">
-      <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
-        Hi, I'm <span class="text-white">Himanshu Gupta</span>
+      <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-teal-600 dark:from-teal-400 dark:to-blue-500">
+        Hi, I'm <span class="text-gray-900 dark:text-white">Himanshu Gupta</span>
       </h1>
-      <h2 class="text-2xl sm:text-4xl font-light text-gray-300 mb-8">
+      <h2 class="text-2xl sm:text-4xl font-light text-gray-700 dark:text-gray-300 mb-8">
         Full Stack Web Developer
       </h2>
-      <p class="text-gray-400 max-w-2xl mb-12 leading-relaxed">
+      <p class="text-gray-600 dark:text-gray-400 max-w-2xl mb-12 leading-relaxed">
         I create responsive and scalable web applications that deliver exceptional user experiences.
       </p>
       <div class="flex space-x-6">
-        <a href="" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors duration-300" aria-label="Instagram">
+        <a href="#" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-300 transition duration-300 ease-in-out" aria-label="Instagram">
           <i class="fa-brands fa-instagram text-2xl"></i>
         </a>
-        <a href="" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors duration-300" aria-label="X">
+        <a href="#" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-300 transition duration-300 ease-in-out" aria-label="X">
           <i class="fa-brands fa-x-twitter text-2xl"></i>
         </a>
-        <a href="" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors duration-300" aria-label="Linkedin">
+        <a href="#" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-300 transition duration-300 ease-in-out" aria-label="Linkedin">
           <i class="fa-brands fa-linkedin-in text-2xl"></i>
         </a>
       </div>
     </div>
   </section>
 
-  <!--Skills Section-->
-
   <!-- Skills Section -->
-  <section id="skills" class="py-20 px-4 bg-gray-800">
+  <section id="skills" class="py-20 px-4 bg-gray-200 dark:bg-gray-800">
     <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-white mb-16 border-b-4 border-teal-500 inline-block pb-2">Skills</h2>
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-16 border-b-4 border-teal-500 inline-block pb-2">Skills</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-all duration-300 shadow-xl">
-          <h3 class="text-xl font-semibold text-teal-400 mb-4">HTML, CSS, JS</h3>
-          <p class="text-gray-300">Building modern, responsive designs with semantic HTML, CSS, and ES6+ JavaScript.</p>
+        <div class="bg-white dark:bg-gray-700 p-8 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-600 mb-4">HTML, CSS, JS</h3>
+          <p class="text-gray-700 dark:text-gray-300">Building modern, responsive designs with semantic HTML, CSS, and ES6+ JavaScript.</p>
         </div>
-        <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-all duration-300 shadow-xl">
-          <h3 class="text-xl font-semibold text-teal-400 mb-4">ReactJS</h3>
-          <p class="text-gray-300">Expert in building dynamic interfaces with hooks, state management, and optimization
-            techniques.</p>
+        <div class="bg-white dark:bg-gray-700 p-8 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-600 mb-4">ReactJS</h3>
+          <p class="text-gray-700 dark:text-gray-300">Expert in building dynamic interfaces with hooks, state management, and optimization techniques.</p>
         </div>
-        <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-all duration-300 shadow-xl">
-          <h3 class="text-xl font-semibold text-teal-400 mb-4">TailwindCSS</h3>
-          <p class="text-gray-300">Designing sleek, responsive interfaces quickly with TailwindCSS utilities.</p>
+        <div class="bg-white dark:bg-gray-700 p-8 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-600 mb-4">TailwindCSS</h3>
+          <p class="text-gray-700 dark:text-gray-300">Designing sleek, responsive interfaces quickly with TailwindCSS utilities.</p>
         </div>
-        <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-all duration-300 shadow-xl">
-          <h3 class="text-xl font-semibold text-teal-400 mb-4">NodeJS</h3>
-          <p class="text-gray-300">Proficient in building scalable backend systems with Node.js, utilizing Express,
-            RESTful APIs, and database integration.</p>
+        <div class="bg-white dark:bg-gray-700 p-8 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-600 mb-4">NodeJS</h3>
+          <p class="text-gray-700 dark:text-gray-300">Proficient in building scalable backend systems with Node.js, utilizing Express, RESTful APIs, and database integration.</p>
         </div>
-        <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-all duration-300 shadow-xl">
-          <h3 class="text-xl font-semibold text-teal-400 mb-4">MongoDB</h3>
-          <p class="text-gray-300">Skilled in working with MongoDB for building NoSQL databases, creating efficient
-            queries, and managing data with Mongoose.</p>
+        <div class="bg-white dark:bg-gray-700 p-8 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-600 mb-4">MongoDB</h3>
+          <p class="text-gray-700 dark:text-gray-300">Skilled in working with MongoDB for building NoSQL databases, creating efficient queries, and managing data with Mongoose.</p>
         </div>
-        <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-all duration-300 shadow-xl">
-          <h3 class="text-xl font-semibold text-teal-400 mb-4">Next.js</h3>
-          <p class="text-gray-300">Experienced in building full-stack apps with Next.js, using SSR, SSG, and API routes
-            for performance and SEO</p>
+        <div class="bg-white dark:bg-gray-700 p-8 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-600 mb-4">Next.js</h3>
+          <p class="text-gray-700 dark:text-gray-300">Experienced in building full-stack apps with Next.js, using SSR, SSG, and API routes for performance and SEO.</p>
         </div>
       </div>
     </div>
@@ -130,32 +95,28 @@
 
  
   <!-- Projects Section -->
-  <section id="projects" class="py-20 px-4 bg-gray-900">
+  <section id="projects" class="py-20 px-4 bg-gray-300 dark:bg-gray-900">
     <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-white mb-16 border-b-4 border-teal-500 inline-block pb-2">Projects</h2>
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-16 border-b-4 border-teal-500 inline-block pb-2">Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-xl">
-          <h3 class="text-xl font-semibold text-teal-400 mb-4">Todos App</h3>
-          <p class="text-gray-300 mb-6">Simple React-based project that allows users to add, view, and manage tasks.</p>
-          <a href="https://github.com/HimanshuGupta278/todos-app" target="_blank"
-            class="text-teal-400 hover:text-teal-300 transition-colors duration-300 text-sm">
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-600 mb-4">Todos App</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-6">Simple React-based project that allows users to add, view, and manage tasks.</p>
+          <a href="https://github.com/HimanshuGupta278/todos-app" target="_blank" class="text-teal-600 hover:text-teal-500 transition-colors duration-300 text-sm">
             View on GitHub →
           </a>
         </div>
-        <div class="bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-xl">
-          <h3 class="text-xl font-semibold text-teal-400 mb-4">iNoteBook</h3>
-          <p class="text-gray-300 mb-6">A full-stack note-taking app with JWT authentication built with the MERN stack.</p>
-          <a href="https://github.com/HimanshuGupta278/iNoteBook" target="_blank"
-            class="text-teal-400 hover:text-teal-300 transition-colors duration-300 text-sm">
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-600 mb-4">iNoteBook</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-6">A full-stack note-taking app with JWT authentication built with the MERN stack.</p>
+          <a href="https://github.com/HimanshuGupta278/iNoteBook" target="_blank" class="text-teal-600 hover:text-teal-500 transition-colors duration-300 text-sm">
             View on GitHub →
           </a>
         </div>
-        <div class="bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-xl">
-          <h3 class="text-xl font-semibold text-teal-400 mb-4">Real-Time Chat App</h3>
-          <p class="text-gray-300 mb-6">Developed with Socket.IO, React, and TailwindCSS for real-time messaging and room
-            management.</p>
-          <a href="https://github.com/HimanshuGupta278/realtime-chat-app" target="_blank"
-            class="text-teal-400 hover:text-teal-300 transition-colors duration-300 text-sm">
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold text-teal-600 mb-4">Real-Time Chat App</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-6">Developed with Socket.IO, React, and TailwindCSS for real-time messaging and room management.</p>
+          <a href="https://github.com/HimanshuGupta278/realtime-chat-app" target="_blank" class="text-teal-600 hover:text-teal-500 transition-colors duration-300 text-sm">
             View on GitHub →
           </a>
         </div>
@@ -182,6 +143,33 @@
   <footer class="py-8 px-4 bg-gradient-to-r from-teal-600 to-blue-600">
     <p class="text-center text-white text-sm">&copy; 2024 Himanshu Gupta. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.getElementById('theme-toggle');
+      const body = document.body;
+      const icon = toggleButton.querySelector('i');
+
+      // Check local storage for theme preference
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        body.classList.toggle('dark', savedTheme === 'dark');
+        icon.classList.toggle('fa-moon', savedTheme === 'dark');
+        icon.classList.toggle('fa-sun', savedTheme !== 'dark');
+      } else {
+        // Default to dark mode
+        localStorage.setItem('theme', 'dark');
+      }
+
+      toggleButton.addEventListener('click', function () {
+        body.classList.toggle('dark');
+        const isDarkMode = body.classList.contains('dark');
+        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        icon.classList.toggle('fa-moon', isDarkMode);
+        icon.classList.toggle('fa-sun', !isDarkMode);
+      });
+    });
+  </script>
 </body>
 
 </html>
